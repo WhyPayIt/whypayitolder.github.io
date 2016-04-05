@@ -1,0 +1,119 @@
+body {
+    background-image: url(../images/intro_background.JPG);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+div{
+	/*max-width: 100px;
+    max-height: 100px;*/
+    width: 100px;
+    height: 100px;
+    /*奇怪，一定要設邊界，文字跟邊框才會有距離，但我希望真的有連結的，不要有邊框*/
+    border-style: dotted;
+    /*border-color: white;*/
+    border-color: hsla(0, 0%, 68%, 0);	/*故意把邊框顏色設成跟底色一樣，看起來就沒有邊框了*/
+    background-color: hsla(0, 0%, 68%, 0.6);
+    text-align: right;
+}
+
+div.origin {
+	position: absolute;
+	left: 1200px;
+	top: 300px;
+}
+
+div.resume {
+	position: relative;
+	left: 1310px;
+	top: 292px;
+}
+
+div.travel {
+	position: relative;
+	left: 1427px;
+	top: 186px;
+}
+
+div[class^="nothing"] {	/*以nothing為開頭*/
+	border-style: dotted;
+	border-color: white;
+	background-color: hsla(0, 0%, 68%, 0);	/*背景不要變色*/
+}
+
+div.nothing{
+	position: relative;
+	left: 1193px;
+	top: 197px;
+}
+
+div.nothing_2{
+	position: relative;
+	left: 1310px;
+	top: 91px;
+}
+
+div.nothing_3{
+	position: relative;
+	left: 1427px;
+	top: -15px;
+}
+
+div.nothing_4{
+	position: relative;
+	left: 1194px;
+	top: -5px;
+}
+
+div.nothing_5{
+	position: relative;
+	left: 1310px;
+	top: -111px;
+}
+
+div.nothing_6{
+	position: relative;
+	left: 1427px;
+	top: -217px;
+}
+
+div.question_mark{
+	position: fixed;
+	bottom: 1px;
+	right: 10px;
+	width: 50px;
+    height: 50px;
+	border-radius: 50px;
+	text-align: middle;
+	vertical-align: middle;
+	border-color: hsla(0, 0%, 68%, 0);
+	color: white;
+	font-size: 30px;
+	font-family: Georgia;
+	background-color: hsla(0, 0%, 68%, 0.3);	/*背景不要變色*/
+}
+
+font.big-text {
+    font-size: 38px;
+}
+
+font.small-text {
+    font-size: 20px;
+}
+
+a:link{
+	color:black;
+	text-decoration: none;
+	/*text-decoration-color: white;*/
+}
+
+a:hover{
+    background-color: hsla(0, 0%, 68%, 0.6);
+    cursor: pointer;	/*滑鼠移過去出現手指*/
+}
+
+a:visited{
+	color:white;
+	text-decoration: none;
+	text-decoration-color: gray;
+}
