@@ -1,0 +1,97 @@
+﻿body {
+    background-image: url(../images/original_background.JPG);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+div{
+	/*max-width: 1750px;
+    max-height: 250px;*/
+    width: 1750px;
+    height: 265px;
+    background-color: hsla(37, 100%, 92%, 0.6);
+    /*text-align: right;*/	/*這一行要mark掉，不然文字顯示方向會怪怪的*/
+    /*定位*/
+    position: fixed;
+	bottom: 5px;
+	-ms-writing-mode: tb-rl; /* IE:字體顯示方向自上而下、從右向左*/
+	-webkit-writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+}
+
+p.content{
+	color: black;
+	font-size: 26px;
+}
+
+font.big-text {
+    font-size: 58px;
+}
+
+font.small-text {
+    font-size: 26px;
+}
+
+ul{
+	list-style: square;
+	font-size: 26px;
+}
+
+div[class$="tag"]  {	/*以tag為結尾，定義tag的大致外型*/
+	position: fixed;
+	right: 0px;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+	text-align: middle;
+	font-size: 30px;
+	/*border-style: double;*/
+	border-top-style: double;
+	border-bottom-style: solid;
+	border-left-style: solid;
+}
+
+div.original_tag{
+	bottom: 470px;
+	width: 150px;
+	border-left-color: hsla(180, 33%, 46%, 1);
+	border-bottom-color: hsla(180, 33%, 46%, 1);
+	color: #007979;
+	background-color: hsla(180, 33%, 83%, 0.8);
+}
+
+div.history_tag{
+	bottom: 400px;
+	width: 200px;
+	border-left-color: hsla(307, 35%, 46%, 1);
+	border-bottom-color: hsla(307, 35%, 46%, 1);
+	color: purple;
+	background-color: hsla(240, 100%, 90%, 0.8);
+}
+
+div[id$="content"]  {	/*以content為結尾，定義content的大致外型*/
+	background-color: hsla(37, 100%, 92%, 0);	/*設為沒有顏色，以免兩層div顏色重疊變濃*/
+	    border-style: dotted;
+    border-color: white;
+    border-spacing: 40px;
+}
+
+a:link{
+	color:black;
+	text-decoration: none;
+	/*text-decoration-color: white;*/
+}
+
+a:hover{
+    /*background-color: hsla(0, 0%, 68%, 0.6);*/
+    background-image: url(../images/line.JPG);
+     /*opacity: 0.5;*/
+    font-stretch: 30px;
+    cursor: pointer;	/*滑鼠移過去出現手指*/
+}
+
+a:visited{
+	color:white;
+	text-decoration: none;
+	text-decoration-color: gray;
+}
