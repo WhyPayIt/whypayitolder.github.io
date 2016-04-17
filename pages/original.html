@@ -4,30 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <title>緣起</title>
-    <link rel="stylesheet" type="text/css" href="..\css\original_layout.css">
+    <link rel="stylesheet" type="text/css" href="..\stylesheets\original_layout.css">
     <script>
-        function hideAll() {
-            document.getElementById("original_content").style.display="none";
-            document.getElementById("history_content").style.display="none";
-        }
+    function hideAll() {
+        document.getElementById("original_content").style.display = "none";
+        document.getElementById("history_content").style.display = "none";
+    }
 
-        function show_content(kind) {
-            //先全部隱藏
-            hideAll();
-            if(kind == "1")
-                document.getElementById("original_content").style.display="";
-            if(kind == "2")
-                document.getElementById("history_content").style.display="";
-        }
+    function show_content(kind) {
+        //先全部隱藏
+        hideAll();
+        if (kind == "1")
+            document.getElementById("original_content").style.display = "";
+        if (kind == "2")
+            document.getElementById("history_content").style.display = "";
+    }
     </script>
 </head>
 
 <body onload="hideAll();">
-<div class="original_tag"><p><a onclick="show_content(1);">緣起</a></p></div>
-<div class="history_tag"><p><a onclick="show_content(2);">架站沿革</a></p></div>
-<div>
-    <div id="original_content"><p class="content"><font class="big-text">先</font>簡單寫一下，這是上課的作業。希望隨著學得越來越多，這裡的內容會越來越豐富。</p></div>
-    <div id="history_content"><p class="content"><ul><li>2016/04/05　製作 index 首頁。</li><li>2016/04/08　製作緣起頁面。</li></ul></p></div>
-</div>
+    <div class="original_tag">
+        <p><a onclick="show_content(1);">緣起</a></p>
+    </div>
+    <div class="history_tag">
+        <p><a onclick="show_content(2);">架站沿革</a></p>
+    </div>
+    <div>
+        <div id="original_content">
+            <p class="content">
+                <font class="big-text">先</font>簡單寫一下，這是上課的作業。希望隨著學得越來越多，這裡的內容會越來越豐富。</p>
+        </div>
+        <div id="history_content">
+            <p class="content">
+                <ul>
+                    <li>2016/04/05　製作 index 首頁。</li>
+                    <li>2016/04/08　製作緣起頁面。</li>
+                </ul>
+            </p>
+        </div>
+    </div>
 </body>
+
 </html>
