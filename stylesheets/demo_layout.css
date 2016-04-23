@@ -1,0 +1,203 @@
+body {
+    background-image: url(../images/yellow_crayon.jpg);
+}
+
+@-webkit-keyframes bigger {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 50px;
+    }
+}
+
+@keyframes bigger {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 50px;
+    }
+}
+
+@-webkit-keyframes move {
+    from {
+        bottom: -770px;
+        opacity: 0;
+    }
+    to {
+        bottom: -490px;
+        opacity: 1;
+        height: 500px;
+    }
+}
+
+@keyframes move {
+    from {
+        bottom: -770px;
+        opacity: 0;
+    }
+    to {
+        bottom: -490px;
+        opacity: 1;
+        height: 500px;
+    }
+}
+
+@-webkit-keyframes changePic {
+    0% {
+        background-image: url(../images/test1.png);
+    }
+    25% {
+        background-image: url(../images/test2.png);
+    }
+    50% {
+        background-image: url(../images/test3.png);
+    }
+    100% {
+        background-image: url(../images/test4.png);
+    }
+}
+
+@keyframes changePic {
+    0% {
+        background-image: url(../images/test1.png);
+    }
+    25% {
+        background-image: url(../images/test2.png);
+    }
+    50% {
+        background-image: url(../images/test3.png);
+    }
+    100% {
+        background-image: url(../images/test4.png);
+    }
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    animation-name: bigger;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.bar {
+    overflow: auto;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    background-color: rgba(173, 173, 173, 0.6);
+}
+
+.container,
+.content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    bottom: -190px;
+    /*border-color: black;
+    border-style: solid;*/
+    width: 80%;
+}
+
+.content {
+    width: 50%;
+    margin-top: 3%;
+    background-color: rgba(204, 204, 255, 0.6);
+    border-style: dotted;
+    border-color: white;
+}
+
+.born_place,
+.student,
+.work,
+li {
+    font-size: 36px;
+}
+
+.born_place {
+    position: absolute;
+    bottom: -770px;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(255, 166, 77);
+}
+
+.student {
+    position: absolute;
+    bottom: -770px;
+    left: 502px;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(255, 128, 255);
+}
+
+.work {
+    position: absolute;
+    bottom: -770px;
+    left: 1004px;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(128, 128, 255);
+}
+
+.born_place.demo,
+.student.demo,
+.work.demo {
+    -webkit-animation-name: move;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.content li {
+    opacity: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content li:hover {
+    color: rgb(153, 204, 255);
+}
+
+.content li.demo {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.nextpage {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+}
+
+a.nextpage:hover {
+    opacity: 1;
+}
+
+a.lastpage {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0;
+}
+
+a.lastpage:hover {
+    opacity: 1;
+}
+
+.final {
+    width: 295px;
+    height: 236px;
+    -webkit-animation-name: changePic;
+    -webkit-animation-duration: 3s;
+}
